@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#left {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+#lnav {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#lnavr {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+#lnavr a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+#lnavr i {
+    color: royalblue;
+}
+#left #textcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+#textcenter h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#textcenter p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #555;
+    opacity: 0.8;
+}
+#textcenter a {
+    text-decoration: none;
+    color: royalblue;
+    border-bottom: 1px solid royalblue;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+#right {
+    width: 60%;
+    height: 100%;
+}
+#rtop {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: green;
+}
+#rbottom {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://media.istockphoto.com/id/1675960430/photo/colorful-raw-fruits-and-vegetables-varied-vegan-food-vivid-rainbow-arrangement.jpg?s=1024x1024&w=is&k=20&c=0W5WUvVWxrrnXtv77qllZaDE0sUQEImDXJ6IYCaW44A=");
+    background-size: cover;
+    background-position: center;
+}
+#rtopleft {
+    width: 50%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+#rtopright {
+    width: 50%;
+    height: 100%;
+    background-image: url("https://plus.unsplash.com/premium_photo-1671379086168-a5d018d583cf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+@media(max-width: 500px) {
+    #main {
+        flex-direction: column;
+    }
+    #left, #right {
+        width: 100%;
+    }
+    
+}
