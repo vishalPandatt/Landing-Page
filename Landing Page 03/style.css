@@ -47,3 +47,35 @@ nav{
 .link a:hover{
     background-color: var(--secondary-color);
 }
+.container{
+    min-height: 100vh;
+    display: flex;
+}
+.container-left{
+    flex: 1;
+    background-image: url("bg.jpg");
+    background-position: center center;
+    border-image: cover;
+    background-repeat: no-repeat;
+}
+.left_content{
+    margin: 5rem 3rem 0 auto;
+    padding: 1rem;
+    max-width: 400px;
+    text-align: right;
+}
+.left_content h4{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.left_content p{
+    color: var(--white);
+}
+.container-right{
+    flex: 1.5;
+    position: relative;
+    
+    
+}
