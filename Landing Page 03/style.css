@@ -75,7 +75,13 @@ nav{
 }
 .container-right{
     flex: 1.5;
-    position: relative;
-    
-    
+    position: relative;   
+}
+.container-right img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 450%;
 }
