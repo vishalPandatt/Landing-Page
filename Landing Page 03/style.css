@@ -80,9 +80,9 @@ nav{
 .container-right img{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
     transform: translateX(-50%);
-    width: 100%;
+    width: 50%;
     max-width: 450%;
 }
 .right_content{
@@ -117,9 +117,13 @@ nav{
     border: 1px solid var(--secondary-color);
     cursor: pointer;
 }
-.primary_btn{
+.btn:hover{
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+.primary_btn{
+    background-color: transparent;
+    color: var(--secondary-color);
     margin-right: 1rem;
 }
 .secondary_btn{
@@ -140,4 +144,40 @@ nav{
 }
 .socials span:hover{
     color: var(--secondary-color);
+}
+
+
+@media (width < 780px) {
+    nav{
+        justify-content: center;
+    }
+    .nav-links{
+        gap: 1rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container-left{
+        min-height: 700px;
+    }
+    .left_content{
+        max-width: none;
+        margin: 6rem 0;
+        text-align: center;
+    }
+    .container-right{
+        min-height: 700px;
+    }
+    .container-right img{
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%,-100%);
+    }
+    .right_content{
+        text-align: center;
+        margin: 8rem auto;
+    }
+    .socials{
+        justify-content: center;
+    }
 }
